@@ -140,9 +140,9 @@ body {
 }
 .weather.dark {
     .weather__header{
-        background-color: blue;
+        background-color: #2B244D;
         
-        .fc-dark-navy{
+        .fc-dark-navy, .fc-multi{
             color: white !important;
         }
     }
