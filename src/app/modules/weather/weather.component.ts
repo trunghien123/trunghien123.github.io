@@ -1,5 +1,6 @@
 import { WeatherService } from './../../services/weather.service';
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Inject, ViewChild, ElementRef } from '@angular/core';
+import { DOCUMENT } from '@angular/common';
 
 @Component({
   selector: 'app-weather',
@@ -7,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./weather.component.scss']
 })
 export class WeatherComponent implements OnInit {
-
+  darkLogo: boolean = false;
   name1: string = '';
   name2: string = '';
   name3: string = '';
@@ -35,8 +36,10 @@ export class WeatherComponent implements OnInit {
     q : 'hanoi',
     appid : '37665091eb00d3291b052e9daf04f7be'
   }
+  @ViewChild('isDark') isDark?: ElementRef;
   constructor(
-    private weather: WeatherService
+    private weather: WeatherService,
+    @Inject(DOCUMENT) private readonly doc : Document
   ) { }
 
   ngOnInit(): void {
@@ -77,5 +80,12 @@ export class WeatherComponent implements OnInit {
       }, err => {alert(err)}
     )
   }
-
+  onChange(toggleChange: any){
+    this.isDark?.nativeElement.classList.toggle('dark');
+    if(toggleChange.target.checked){
+      this.darkLogo = true;
+    } else {
+      this.darkLogo = false;
+    }
+  }
 }

@@ -1,17 +1,19 @@
-<div class="weather">
+<div #isDark class="weather">
     <!-- header -->
     <div class="d-flex justify-content-between weather__header ">
-        <div class="weather__logo"><img src="../../../assets/images/Logo.png" alt="logo"></div>
+        <div class="weather__logo">
+            <img *ngIf="!darkLogo" src="../../../assets/images/Logo.png" alt="logo">
+            <img *ngIf="darkLogo" src="../../../assets/images/LogoDark.png" alt="logo">
+        </div>
         <div class="fs-30 fc-dark-navy">TODAY</div>
         <div class="d-flex fs-18 fc-multi">
             <span>LIGHT</span>
-            <input type="checkbox" id="switch" /><label for="switch" class="mx-30">Toggle</label>
+            <input type="checkbox" id="switch" (change)="onChange($event)" /><label for="switch" class="mx-30">Toggle</label>
             <span>DARK</span>
-    
         </div>
     </div>
     <!-- body -->
-    <div class="px-100 py-100">
+    <div class="px-100 py-100 weather__body">
         <div class="row">
             <div class="col-md-4 d-flex justify-content-center">
                 <div class="weather__country">

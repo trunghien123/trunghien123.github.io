@@ -139,11 +139,29 @@ body {
   }
 }
 .weather.dark {
-    .weather__header{
+    .weather{
+      &__header{
+
         background-color: #2B244D;
         
         .fc-dark-navy, .fc-multi{
             color: white !important;
         }
+      }
+    }
+    .weather{
+      &__body{
+        background: linear-gradient(to top,  #2E1D65 ,#B290FF);
+      }
+      &__country{
+        background: linear-gradient(to bottom,  #00057A ,#721C87);
+        box-shadow: none;
+        &--state, &--temp, &--min, &--max, .fc-dark-blue {
+          color: white !important;
+          &::after{
+            border-color: white;
+          }
+        }
+      }
     }
 }
