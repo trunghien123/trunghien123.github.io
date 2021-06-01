@@ -1,0 +1,60 @@
+.vs-pagination {
+    display: flex;
+    justify-content: space-between;
+    &_page-list{
+        display: flex;
+        li:not(:last-child) {
+            margin-right: 1px;
+        }
+        li {
+            width: 60px;
+            height: 60px;
+            font-size: 12px;
+            line-height: 15px;
+            font-style: bold;
+            background: #E3E3E3;
+            font-family: 'Muli Bold';
+            a {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 100%;
+                height: 100%;
+                color: #4A4A4A;
+                &:hover {
+                    transition: 0.3s ease;
+                    color: #AFD53D !important;
+                    background: #1D6320;
+                    cursor: pointer;
+                }
+            }
+            // .control {
+            //     &:hover {
+            //         transition: none;
+            //         color: #4A4A4A;
+            //         background: #E3E3E3;
+            //     }
+            // }
+            .active {
+                transition: 0.3s ease;
+                color: #AFD53D;
+                background: #1D6320;
+            }
+        }
+    }
+    vs-button {
+        display: block;
+        button {
+            text-align: center;
+            padding-top: 23px;
+            padding-bottom: 22px;
+            width: 380px;
+            color: #AFD53D;
+            &:hover{
+                background: #AFD53D;
+                color: #1D6320;
+                transition: 0.3s;
+            }
+        }
+    }
+}

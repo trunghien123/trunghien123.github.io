@@ -1,0 +1,21 @@
+.vs-skelekon {
+    animation: loading 3s infinite linear;
+    background-image: linear-gradient(to right, #dedfe1 0%, #f2f3f5 20%, #dedfe1 40%, #dedfe1 100%); 
+    background-repeat: repeat-x; 
+  }
+  @keyframes loading {
+    0% {
+    background-position: -1980px;
+    }
+    100% {
+    background-position: 1980px;
+    }
+}
+@-webkit-keyframes loading {
+  0% {
+  background-position: -1980px;
+  }
+  100% {
+  background-position: 1980px;
+  }
+}

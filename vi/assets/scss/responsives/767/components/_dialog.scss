@@ -1,0 +1,17 @@
+.cdk-overlay-pane {
+    padding: $default-padding;
+    max-width: 100% !important;
+    width: 100%;
+    overflow-y: auto;
+}
+.cdk-overlay-dark-backdrop {
+    background: rgba(255, 255, 255, 0.32);
+}
+.vs-dialog_body {
+    .involved-titem {
+        border-bottom: 1px solid #C6C6C6;
+    }
+    .involved-titem:last-child {
+        border-bottom: none;
+    }
+}

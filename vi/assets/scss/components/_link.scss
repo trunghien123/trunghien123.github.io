@@ -1,0 +1,12 @@
+.vs-link {
+    text-decoration: none;
+    color: $c-gray !important;
+    cursor: pointer;
+    &--white {
+        color:  $c-white;
+    }
+    &:hover {
+        text-decoration: none;
+    }
+  }
+  

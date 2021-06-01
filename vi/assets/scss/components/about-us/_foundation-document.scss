@@ -1,0 +1,44 @@
+.vs-foundation {
+  margin: 78px 0 166px 0;
+
+  &_download {
+    padding-top: 48px;
+    text-align: center;
+
+    .media {
+      min-width: 334px;
+      align-items: center;
+      display: flex;
+      justify-content: center;      
+      .media-body {
+        text-align: left;
+        flex: none;
+        display: flex;
+        flex-direction: column;
+      }
+
+      img {
+        width: 102px;
+        height: 102px;
+        margin-right: 34px;
+      }
+
+      a {
+        line-height: 32px;
+        color: #424242;
+        font-size: 18px;
+        transition: all .3s ease;
+
+        -webkit-transition: all .3s ease;
+        -moz-transition: all .3s ease;
+        -ms-transition: all .3s ease;
+        -o-transition: all .3s ease;
+
+        &:hover {
+          color: #85BE1A;
+        }
+      }
+    }
+
+  }
+}

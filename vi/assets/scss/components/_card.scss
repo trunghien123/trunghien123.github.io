@@ -1,0 +1,47 @@
+.vs-card {
+    &__card-body{
+        &--display{
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 14px;
+            a {
+                align-self: center;
+            }
+        }
+        p {
+            font-size: 16px;
+            line-height: 20px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: initial;
+            display: -webkit-box;
+            -webkit-line-clamp: 6;
+            -webkit-box-orient: vertical;
+            max-height: 120px;
+            color: #4A4A4A;
+        }
+        p:hover {
+            color: #4A4A4A;
+        }
+        .more-next {
+            img {
+                height: 11px;
+            }
+        }
+    }
+    .img-news {
+        opacity: 1;
+        transition: opacity 1s ease;
+        height: 280px;
+        object-fit: cover;
+        margin-bottom: 18px;
+        &:hover {
+            opacity: 0.5;
+        }
+    }
+    .vs-title {
+        font-size: 18px;
+        line-height: 36px;
+        height: 23px;
+    }
+}

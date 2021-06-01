@@ -1,0 +1,36 @@
+.form-search {
+    margin-bottom: 29px;
+    &_group {
+        display: flex;
+        align-items: center;
+        padding: 17px 35px;
+        border-top: 1px solid #C6C6C6;
+        border-bottom: 1px solid #C6C6C6;
+        svg {
+            height: 21px;
+            width: 19px;
+            margin-right: 25px;
+        }
+        label {
+            display: flex;
+            align-items: center;
+            position: relative;
+        }
+        label::after {
+            content: "";
+            display: inline-block;
+            width: 1px;
+            height: 22px;
+            background: #C6C6C6;
+            right: 0;
+            position: absolute;
+        }
+        input {
+            padding: 5px 19px;
+            line-height: 22px;
+            &:focus {
+                outline: none;
+            }
+        }
+    }
+}

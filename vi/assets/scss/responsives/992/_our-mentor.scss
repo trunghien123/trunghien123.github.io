@@ -1,0 +1,43 @@
+
+.program-mentoring {
+    .join-us {
+        .vs-title_text {
+            font-size: 24px;
+            line-height: 32px;
+            text-align: center;
+        }
+        &_image {
+           
+            &_img {
+                max-width: 100%;
+                max-height: 460px;
+                transform: translateX(18px);
+            }
+            &_bg {
+                max-width: 100%;
+                right: 0;
+            }
+        }
+        &_relation {
+            &--en {
+                top: -10px;
+                left: 287px;
+            }
+        }
+        &_content {
+            width: 120px;
+            &--1 {
+                left: 70px;
+                bottom: 166px;
+            }
+            &--2 {
+                left: 305px;
+                bottom: 130px;
+            }
+            &--3 {
+                right: 68px;
+                bottom: 200px;
+            }
+        }
+    }
+}

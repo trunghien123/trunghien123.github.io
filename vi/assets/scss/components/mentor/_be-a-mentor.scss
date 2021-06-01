@@ -1,0 +1,145 @@
+.program-mentoring {
+    margin-top: 78px;
+    color: #222A41;
+    a {
+        color: #629D1D;
+    }
+    &_title {
+        margin-bottom: 33px;
+        vs-title {
+            display: block;
+            margin-bottom: 13px;
+        }
+        p {
+            text-align: center;
+            font-size: 18px;
+            line-height: 24px;
+            max-width: 1008px;
+            margin: 0 auto;
+        }
+    }
+    .join-us {
+        span {
+            font-family: Muli;
+            font-weight: bold;
+        }
+        &_text {
+            font-size: 14px;
+            line-height: 24px;
+            margin-top: 6px;
+            text-align: center;
+        }
+        &_image {
+            width: fit-content;
+            margin: 0 auto;
+            margin-top: 59px;
+            position: relative;
+            &_img {
+                height: 525px;
+                max-height: 525px;
+                object-fit: cover;
+            }
+            &_bg {
+                position: absolute;
+                top: -42px;
+                right: 23px;
+                z-index: -1;
+                height: 458px;
+            }
+        }
+        &_relation {
+            font-size: 26px;
+            line-height: 26px;
+            color: $c-green-atlantis;
+            text-align: center;
+            font-family: 'Muli ExtraBold';
+            width: 162px;
+            position: absolute;
+            top: 37px;
+            left: 314px;
+            &--en {
+                top: 0px;
+                left: 319px;
+            }
+        }
+        &_content {
+            font-size: 12px;
+            line-height: 18px;
+            width: 142px;
+            text-align: center;
+            &--1 {
+                position: absolute;
+                left: 61px;
+                bottom: 207px;
+            }
+            &--2 {
+                position: absolute;
+                left: 324px;
+                bottom: 136px;
+            }
+            &--3 {
+                position: absolute;
+                right: 92px;
+                bottom: 200px;
+            }
+        }
+    }
+    .requirement-contain {
+        margin-top: -10px;
+        margin-bottom: 38px;
+        align-items: center;
+        &_img {
+            height: 356px;
+            max-height: 356px;
+            object-fit: cover;
+        }
+        &_content {
+            padding-top: 28px;
+        }
+    }
+    .process-contain {
+        margin-bottom: 98px;
+        &_head {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+            .des-col {
+                align-self: center;
+                &_title {
+                    font-size: 32px;
+                    line-height: 40px;
+                    color: $c-green-atlantis;
+                    font-family: 'Open Sans SemiBold';
+                    margin-bottom: 20px;
+                }
+                &_text {
+                    max-width: 403px;
+                    font-size: 14px;
+                    line-height: 24px;
+                }
+            }
+            .img-col {
+                height: 425px;
+                object-fit: cover;
+            }
+        }
+        &_step {
+            max-width: 693px;
+            margin: 0 auto;
+        }
+    }
+    .tracking {
+        margin-bottom: 35px;
+        vs-title {
+            white-space: pre-line;
+        }
+        &_image {
+            padding-top: 105px;
+            padding-left: 40px;
+            img {
+                height: 386px;
+                object-fit: cover;
+            }
+        }
+    }
+}

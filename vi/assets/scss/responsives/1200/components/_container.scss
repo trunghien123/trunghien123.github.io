@@ -1,0 +1,14 @@
+.wrapper {
+    max-width: 1140px;
+    padding: 0 $default-padding;
+}
+
+.row {
+    margin-left: -$default-padding;
+    margin-right: -$default-padding;
+}
+
+[class*=col-] {
+    padding-left: $default-padding;
+    padding-right: $default-padding;
+}

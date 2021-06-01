@@ -1,0 +1,112 @@
+
+.bottom-buttons {
+    margin: 0px -4px;
+    vs-button {
+        padding: 0 4px;
+        flex: 0 0 50%;
+        max-width: 50%;
+       
+    }
+}
+.bottom-buttons_half--profile {
+    margin: 0;
+}
+.detail-contain {
+    padding-top: 0;
+    border: none;
+    box-shadow: none;
+    flex-flow: row wrap;
+    vs-profile-catalog,
+    tab-content {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+.vs-catalog {
+    li {
+        a {
+            &.catalog-active::after {
+                border-color: #FFF;
+                transform: rotate(45deg);
+                -webkit-transform: rotate(45deg);
+            }
+        }
+    }
+}
+
+.profile-collapse {
+    max-width: 100%;
+}
+
+.profile-collapse button {
+    padding: 16px 20px 16px 12px;
+    &::after {
+        right: 10px;
+    }
+}
+
+.become-student-body_recruitment {
+    .recruitment-steps {
+        .recruit-step-short {
+            max-width: 100%;
+            text-align: justify;
+        }
+    }
+}
+.bottom-buttons {
+    display: flex;
+    flex-direction: column;
+    .vs-button {
+        max-width: 100%;
+    }
+}
+.vs-catalog li:not(:last-child) {
+    margin-bottom: 10px;
+}
+.alumni-card {
+    margin-bottom: 20px;
+    &_body {
+        flex-direction: column;
+        .alumni-avatar {
+            flex: 0 0 auto;
+            max-width: 100%;
+        }
+        .alumni-infor {
+            padding: 20px
+        }
+    }
+    &_story {
+        padding: 20px;
+    }
+    .alumni-story {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 7;
+        -webkit-box-orient: vertical;
+        max-height: 168px;
+        white-space: pre-line;
+        transition: 0.3s;
+        &::before {
+            top: -30px;
+            left: 14px;
+        }
+    }
+}
+.alumni-filter {
+    padding: 18.5px 0;
+    .left-col {
+        flex: none;
+    }
+    .filter-list {
+        padding-top: 0;
+        flex-flow: row;
+        &_fields {
+            flex: 0 0 auto;
+            .fiter-field {
+                flex: 0 0 auto;
+                margin-bottom: 0;
+            }
+        }
+    }
+}

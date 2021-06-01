@@ -1,0 +1,54 @@
+.vs-help {
+    margin-bottom: -154px;
+    margin-top: -50px;
+    display: flex;
+    img {
+        @media screen and (max-width: 1440px) {
+            max-width: 520px;
+        }
+    }
+    &_help-us {
+        margin: 0 0 84px 0;
+        align-self: center;
+        padding: 0;
+        @media screen and (min-width: 1920px) {}
+        a {
+            padding: 17px 106px 16px;
+            background: #AFD53D;
+            color: #1D6320;
+            font-family: 'Open Sans SemiBold';
+            font-size: 14px;
+            line-height: 18px;
+            text-transform: uppercase;
+            min-width: 270px;
+            display: inline-block;
+            &:hover {
+                background-color: $c-green-strong;
+                color: $c-white;
+                transition: 0.3s;
+            }
+        }
+        // button {
+        //     padding: 16px 106px;
+        //     &:hover {
+        //         background-color: $c-green-strong;
+        //         color: $c-white;
+        //         transition: 0.3s;
+        //     }
+        // }
+        .infor-help {
+            margin-left: 133px;
+            p {
+                font-family: 'Muli Italic';
+                font-size: 14px;
+                line-height: 18px;
+                margin-bottom: 31px;
+                color: #535353;
+                font-style: italic;
+            }
+        }
+    }
+    .title-help {
+        margin-bottom: 16px;
+    }
+}

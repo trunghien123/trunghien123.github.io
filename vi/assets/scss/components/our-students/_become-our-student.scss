@@ -1,0 +1,256 @@
+.become-student-container {
+    margin-top: 81px;
+    font-family: 'Open Sans';
+    margin-bottom: 35px;
+}
+
+.become-student-body {
+    font-size: 14px;
+    line-height: 24px;
+    color: #222A41;
+    strong {
+        font-family: 'Open Sans SemiBold';
+    }
+    a {
+        color: #629D1D;
+    }
+    &_head {
+        font-size: 18px;
+        line-height: 24px;
+        max-width: 1008px;
+        margin: 0 auto;
+        text-align: center;
+        margin-bottom: 26px;
+        vs-title {
+            display: block;
+            margin-bottom: 13px;
+        }
+        .become-student-intro {
+            white-space: pre-line;
+        }
+    }
+    .step-order {
+        text-transform: uppercase;
+        color: #000;
+        font-size: 12px;
+        line-height: 15px;
+        font-family: 'Open Sans SemiBold';
+        padding-bottom: 5px;
+    }
+    .step-name {
+        text-transform: uppercase;
+        color: #85BE1A;
+        font-size: 18px;
+        line-height: 23px;
+        font-family: 'Open Sans SemiBold';
+        margin-bottom: 26px;
+    }
+    .step-des {
+        &--application {
+            text-align: center;
+            p {
+                margin-bottom: 14px;
+                text-align: center;
+                white-space: pre-line;
+            }
+            a {
+                cursor: pointer;
+                padding: 16px 37px;
+                font-size: 16px;
+                line-height: 20px;
+                color: #fff;
+                background: #AFD53D;
+                border-radius: 10px;
+                max-width: 320px;
+                &:hover {
+                    color: #fff;
+                }
+            }
+        }
+        &--recruitment {
+            text-align: left;
+            p {
+                margin-bottom: 14px;
+                text-align: left;
+                white-space: pre-line;
+            }
+        }
+    }
+    &_benefit {
+        .benefit-content {
+            .vs-title {
+                margin-bottom: 18px;
+                display: block;
+            }
+        }
+        margin-bottom: 52px;
+        .benefit-list {
+            padding-left: 18px;
+            ul {
+                padding-left: 0;
+                list-style: none;
+                max-width: 566px;
+                margin-bottom: 30px;
+                margin-left: -18px;
+                li {
+                    font-size: 14px;
+                    line-height: 24px;
+                    position: relative;
+                    padding-left: 18px;
+                    &::before {
+                        position: absolute;
+                        content: "\2022";
+                        color: #85BE1A;
+                        font-weight: bold;
+                        display: inline-block;
+                        width: 6px;
+                        top: -2px;
+                        left: 0;
+                    }
+                }
+            }
+        }
+    }
+    &_applicant {
+        // max-width: 760px;
+        margin: 0 auto;
+        margin-bottom: 46px;
+        vs-title {
+            display: block;
+            margin-bottom: 25px;
+        }
+        .applicant-step {
+            display: flex;
+            font-size: 14px;
+            line-height: 24px;
+            color: #222A41;
+            flex-direction: column;
+            margin-top: 25px;
+            justify-content: center;
+            text-align: center;
+            img {
+                height: 173px;
+                object-fit: scale-down;
+                max-width: 100%;
+                margin-bottom: 44px;
+            }
+        }
+    }
+    &_recruitment {
+        vs-title {
+            display: block;
+            margin-bottom: 25px;
+        }
+        .recruitment-steps {
+            padding-top: 18px;
+            &_item {
+                margin-bottom: 41px;
+                padding-top: 18px;
+            }
+            .recruit-step-short {
+                max-width: 280px;
+            }
+            .recruit-step-content {
+                max-width: 780px;
+            }
+            .step-detail {
+                &_name {
+                    pointer-events: none;
+                    text-transform: uppercase;
+                    color: #222A41;
+                    font-family: 'Open Sans SemiBold';
+                    padding-bottom: 4px;
+                    border-bottom: 1px solid #E2E2E2;
+                    margin-bottom: 27px;
+                    &--form {
+                        padding: 13px 32px;
+                        background: #F1F2F2;
+                        border-radius: 62px;
+                        margin-bottom: 15px;
+                    }
+                }
+                .collapse:not(.show),
+                .collapse {
+                    display: block;
+                }
+                .collapsing {
+                    height: auto;
+                    transition: none;
+                }
+                &_content {
+                    white-space: pre-line;
+                    .step-text {
+                        padding-top: 8px;
+                    }
+                    ul {
+                        li:not(:last-child) {
+                            margin-bottom: 9px;
+                        }
+                        li {
+                            display: flex;
+                            padding-bottom: 29px;
+                            border-bottom: 1px solid #E2E2E2;
+                            span {
+                                font-family: 'Open Sans SemiBold';
+                                color: #fff;
+                                background: #85BE1A;
+                                border-radius: 50%;
+                                margin-right: 22px;
+                                max-height: 39px;
+                                padding: 16px;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                            }
+                            p strong {
+                                color: #85BE1A;
+                                display: block;
+                                margin-bottom: 15px;
+                            }
+                        }
+                    }
+                    &--assess {
+                        ul {
+                            margin-bottom: 26px;
+                            li {
+                                padding-bottom: 0;
+                                border-bottom: none;
+                            }
+                        }
+                    }
+                    &--col {
+                        display: flex;
+                    }
+                    &--form {
+                        padding: 0 32px;
+                        margin-bottom: 15px;
+                        ul {
+                            padding-left: 0;
+                            list-style: none;
+                            max-width: 566px;
+                            // margin-top: 20px;
+                            li {
+                                padding-bottom: 0;
+                                border-bottom: none;
+                                font-size: 14px;
+                                line-height: 24px;
+                                position: relative;
+                                padding-left: 18px;
+                                &::before {
+                                    position: absolute;
+                                    content: "\2022";
+                                    color: #222A41;
+                                    font-weight: bold;
+                                    display: inline-block;
+                                    width: 6px;
+                                    top: -2px;
+                                    left: 0;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

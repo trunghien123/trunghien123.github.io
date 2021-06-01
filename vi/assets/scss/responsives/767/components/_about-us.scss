@@ -1,0 +1,76 @@
+
+
+.vs-core-val {
+    &_content {
+        img {
+            max-width: 420px;
+            width: 100%;
+        }
+    }
+}
+
+// OUR JOURNEY
+.head-time-line {
+    &_title {
+        span {
+            white-space: nowrap;
+        }
+    }
+}
+
+.footer-time-line {
+    img {
+        object-fit: cover;
+        object-position: center;
+    }
+}
+
+// OUR TEAM
+.vs-our-team {
+    &_title {
+        padding-left: $default-padding;
+        padding-bottom: 24px;
+    }
+    &_team {
+        .team-item_contain {
+            .founder-avartar {
+                background: url('assets/images/Rectangle.png') left top no-repeat, url('assets/images/Ornament-Dotted.png') right bottom no-repeat;
+                padding: 43px 50px 50px;
+                min-height: auto;
+                margin-bottom: 18px;
+                img {
+                    height: 280px;
+                    width: 280px;
+                }
+            }
+            .founder-infor {
+                &_name {
+                    font-size: 24px;
+                }
+            }
+        }
+    }
+}
+
+// Foundation
+.vs-foundation {
+    .vs-foundation_download {
+        padding-top: 50px;
+        .media {
+            display: block;
+            width: auto;
+            text-align: center;
+            img {
+                display: block;
+                margin: 0 auto;
+                margin-bottom: 24px;
+            }
+            &-body {
+                text-align: center;
+            }
+        }
+    }
+}
+.vs-our-team_title p{
+    white-space: pre-line;
+}

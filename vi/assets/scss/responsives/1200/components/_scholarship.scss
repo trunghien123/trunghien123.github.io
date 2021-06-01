@@ -1,0 +1,138 @@
+.program-scholarship {
+    margin-top: 24px;
+    &_head {
+        .vs-title {
+            margin-bottom: 53px;
+        }
+        .vs-title_text {
+            font-size: 31px;
+            line-height: 41px;
+        }
+        .scholarship-des {
+            font-size: 14px;
+        }
+    }
+    &_revenue {
+        &--mobile {
+            margin-bottom: 35px;
+        }
+        &--mobile img {
+            height: 368px;
+            object-fit: cover;
+            object-position: center;
+            width: 100%;
+        }
+    }
+    &_slogan {
+        font-size: 14px;
+    }
+    &_target {
+        margin-bottom: 58px;
+        .vs-title_text {
+            font-size: 24px;
+            line-height: 32px;
+        }
+    }
+    &_target img {
+        height: auto;
+        width: 100%;
+        margin-bottom: 79px;
+    }
+    &_select {
+        margin-bottom: 50px;
+        .vs-title_text {
+            font-size: 24px;
+            line-height: 32px;
+        }
+        .critera-contain {
+            margin-bottom: 64px;
+        }
+        img {
+            width: 100%;
+            height: auto;
+            margin: 0;
+            margin-top: 25px;
+        }
+    }
+    &_annual {
+        img {
+            height: auto;
+            width: 100%;
+            margin-bottom: 50px;
+        }
+        .vs-title {
+            margin-bottom: 8px;
+        }
+        .vs-title_text {
+            font-size: 24px;
+            line-height: 32px;
+        }
+        .annual-content p {
+            margin-bottom: 15px;
+        }
+        .annual-content ul {
+            flex: 0 0 100%;
+            max-width: 100%;
+            &:nth-child(2) {
+                padding-right: 0;
+            }
+        }
+    }
+}
+
+.tranning-program {
+    &_head {
+        .vs-title .vs-title_text {
+            font-size: 31px;
+            line-height: 36px;
+        }
+        .training-intro {
+            font-size: 14px;
+        }
+    }
+    &_list {
+        transform: none;
+        .tranning-content {
+            padding-bottom: 30px;
+            &_thumbnail {
+                justify-content: center;
+                margin-bottom: 28px;
+            }
+            vs-title {
+                margin-bottom: 20px;
+                .vs-title_text {
+                    font-size: 24px;
+                    line-height: 32px;
+                }
+            }
+            &_list {
+                max-width: 100%;
+            }
+        }
+    }
+}
+
+.mentoring-pro-container {
+    .mentoring-pro-body {
+        &_head {
+            padding-bottom: 30px;
+            .vs-title .vs-title_text {
+                font-size: 31px;
+                line-height: 36px;
+            }
+            .intro-content {
+                font-size: 14px;
+            }
+        }
+        &_achieve {
+            .vs-title_text {
+                font-size: 24px;
+                line-height: 32px;
+            }
+            img {
+                height: auto;
+                width: 100%;
+            }
+        }
+    }
+}

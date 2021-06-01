@@ -1,0 +1,23 @@
+.vs-our-team {
+    &_team {
+        max-width: 728px;
+        .team-item {
+            &_contain {
+                .founder-avartar {
+                    &--left {
+                        padding: 46px 26px 64px 70px;
+  
+                    }
+                    &--right {
+                        padding: 46px 60px 64px 26px;
+                    }
+                }
+                .founder-infor {
+                    &--left {
+                        padding-left: 70px;
+                    }
+                }
+            }
+        }
+    }
+}

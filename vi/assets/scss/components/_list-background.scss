@@ -1,0 +1,31 @@
+.list-bg {
+    margin-top: 28px;
+   &_item {
+        background: #F1F2F2;
+        display: flex;
+        padding: 22px 41px 22px 37px;
+        border-radius: 62px;
+        margin-bottom: 25px;
+        &:last-child{
+            margin-bottom: 0;
+        }
+        img {
+            height: 29px;
+            margin-top: 10px;
+        }
+        p {
+            font-size: 14px;
+            line-height: 24px;
+            padding-left: 31px;
+        }
+        &--require {
+            padding:  24px 41px 25px 37px;
+        }
+   }
+   &--tracking {
+       max-width: 580px;
+       .list-bg_item {
+        min-height: 137px;
+       }
+   }
+}

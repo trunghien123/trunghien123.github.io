@@ -1,0 +1,39 @@
+.blog-list {
+    margin-left: -10px;
+    margin-right: -10px;
+    margin-bottom: 47px;
+    &_item {
+        padding: 10px 0;
+        display: flex;
+        vs-blog-item {
+            display: flex;
+            flex-grow: 1;
+        }
+    }
+}
+
+.blog-type {
+    &_head {
+        margin-bottom: 20px;
+        vs-title {
+            display: block;
+            cursor: pointer;
+        }
+    }
+    &_footer {
+        text-align: center;
+        vs-button {
+            button {
+                padding-top: 15px;
+                padding-bottom: 15px;
+                font-size: 16px;
+                line-height: 20px;
+                &:hover {
+                    background-color: #1D6320;
+                    color: #fff;
+                    transition: 0.3s;
+                }
+            }
+        }
+    }
+}

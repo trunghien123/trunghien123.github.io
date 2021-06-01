@@ -1,0 +1,163 @@
+.map-banner {
+    background-color: $c_azure;
+    position: relative;
+    min-width: 1200px;
+    &::before {
+        content: "";
+        border-top: 2px solid #1D6320;
+        width: 130px;
+        margin-top: 220px;
+        right: 100%;
+        position: absolute;
+        left: 0;
+        @media screen and (max-width: 1440px) {
+            width: 90px;
+        }
+        @media screen and (max-width: 1378px) {
+            width: 56px;
+            max-width: calc(100vw - 1260px);
+        }
+    }
+    &_inner {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        position: relative;
+        width: calc(100vw - 260px);
+        @media screen and (max-width: 1440px) {
+            width: auto;
+        }
+        margin: 0 auto;
+        &_inner {
+            padding-bottom: 145px;
+        }
+        &_infor {
+            display: flex;
+            padding-top: 173px;
+            padding-bottom: 145px;
+            flex-direction: column;
+            button {
+                padding: 17px 89px 16px 89px;
+                &:hover {
+                    background: $c-green-yellow;
+                    color: $c-green-strong;
+                    transition: 0.3s;
+                }
+            }
+            .content-exp {
+                p {
+                    font-family: 'Open Sans';
+                    font-size: 16px;
+                    line-height: 20px;
+                    margin-bottom: 10px;
+                    @media screen and (min-width: 1920px) {
+                        padding-left: 89px;
+                    }
+                }
+                .title-jouney {
+                    margin-bottom: 15px;
+                    display: block;
+                    h5 {
+                        line-height: 40px;
+                        height: 40px;
+                    }
+                }
+                .learn-more {
+                    margin-bottom: 55px;
+                }
+            }
+            .data-statictis {
+                display: flex;
+                text-align: left;
+                position: relative;
+                margin-left: -15px;
+                &_item {
+                    position: relative;
+                    font-size: 72px;
+                    line-height: 48px;
+                    font-weight: 900;
+                    font-family: "Muli ExtraBold";
+                    &--scholars {
+                        padding-left: 48px;
+                        padding-right: 31px;
+                    }
+                    @media screen and(max-width: 1400px) {
+                        font-size: 60px;
+                        &--scholars {
+                            padding-left: 48px;
+                            padding-right: 31px;
+                        }
+                    }
+                    &:first-child {
+                        padding-left: 0;
+                    }
+                    &_number {
+                        position: relative;
+                        display: flex;
+                        width: auto;
+                        justify-content: center;
+                        &--percent {
+                            justify-content: left;
+                        }
+                    }
+                    .text-percent {
+                        position: relative;
+                        span {
+                            font-size: 40px;
+                            position: absolute;
+                            top: -12px;
+                        }
+                    }
+                    p {
+                        padding-top: 12px;
+                        font-size: 34px;
+                        line-height: 48px;
+                        font-weight: 800;
+                    }
+                }
+            }
+        }
+        &_map {
+            position: absolute;
+            right: 0;
+            top: 65px;
+            @media screen and (min-width: 1300px) {
+                transform: translate(50px, 0);
+            }
+            @media screen and (min-width: 1600px) {
+                transform: translate(130px, 0);
+            }
+            @media screen and (min-width: 1920px) {
+                transform: translate(250px, 0);
+            }
+            img {
+                height: 457px;
+                @media screen and (max-width: 1300px) {
+                    max-height: 416px;
+                    max-width: 50vw;
+                }
+                @media screen and (max-width: 1400px) {
+                    max-height: 416px;
+                }
+            }
+            p {
+                position: absolute;
+                top: -20px;
+                right: 0px;
+                font-size: 16px;
+                line-height: 20px;
+                text-transform: uppercase;
+                font-family: 'Open Sans';
+            }
+        }
+    }
+    @media screen and (min-width: 1920px) {
+        .title-jouney {
+            display: block;
+            transform: translate(-40px, 0);
+        }
+        .data-statictis {
+            transform: translate(-160px, 0);
+        }
+    }
+}

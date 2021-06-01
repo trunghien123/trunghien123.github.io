@@ -1,0 +1,89 @@
+.table-title {
+    color: #4A4A4A;
+    font-size: 16px;
+    line-height: 21px;
+    font-family: 'Open Sans SemiBold';
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+.profile-table {
+    font-size: 16px;
+    line-height: 21px;
+    font-family: 'Open Sans';
+    width: 100%;
+    th {
+        font-size: 16px;
+        line-height: 21px;
+        font-family: 'Open Sans SemiBold';
+        white-space: nowrap;
+    }
+    td, th {
+        padding: 10px 0;
+        border-bottom: 1px solid #C6C6C6;
+        border-top: none;
+    }
+    .none-border {
+        border-bottom: none;
+    }
+    th, td {
+        p {
+            font-size: 16px ;
+            line-height: 21px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+    }
+    td {
+        vertical-align: top;
+        text-align: right;
+        white-space: pre-line;
+        vs-title {
+            display: block;
+            margin-bottom: 23px;
+        }
+    }
+    &--ex-work {
+        th {
+            white-space: nowrap;
+        }
+
+    }
+    &--activity {
+        th,td:not(:last-child) {
+            padding-right: 22px;
+        }
+        th, td{
+            text-align: left;
+            min-width: 50px;
+        }
+        td {
+            text-align: justify;
+        }
+        th {
+            min-width: 50px;
+        }
+        tr:last-child td{
+            border-bottom: none;
+        }
+    }
+    &--award {
+        th,td:not(:last-child) {
+            padding-right: 22px;
+        }
+        th, td{
+            text-align: left;
+            min-width: 200px;
+        }
+        td {
+            text-align: justify;
+        }
+    }
+}
+.ex-work-contain {
+    table {
+        margin-bottom: 20px;
+    }
+    table:not(:first-child):not(:last-child) {
+        margin-bottom: 30px;
+    }
+}

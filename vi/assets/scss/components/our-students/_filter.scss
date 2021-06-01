@@ -1,0 +1,137 @@
+.our-students-filter {
+    border-top: 1px solid #C6C6C6;
+    border-bottom: 1px solid #C6C6C6;
+    padding: 18.5px 0;
+    display: flex;
+    align-items: center;
+    color: #4A4A4A;
+    vs-button {
+        display: inline-block;
+        margin-left: auto;
+        button {
+            min-width: 140px;
+            height: 34px;
+        }
+    }
+    .left-col {
+        display: flex;
+        align-items: center;
+        padding-left: 37px;
+        img {
+            height: 21px;
+            padding-right: 25px;
+        }
+        p {
+            text-transform: uppercase;
+            padding-right: 44px;
+            position: relative;
+            padding-left: 19px;
+            &::before {
+                content: " ";
+                left: 0;
+                width: 1px;
+                height: 22px;
+                background: #C6C6C6;
+                position: absolute;
+            }
+        }
+    }
+    .filter-list {
+        display: flex;
+        flex-grow: 1;
+    }
+    .fiter-field:last-child {
+        margin-right: 0;
+    }
+    .fiter-field {
+        position: relative;
+        display: inline-block;
+        margin-right: 10px;
+        &--name {
+            input {
+                max-width: 98px;
+            }
+        }
+        &--major {
+            input {
+                max-width: 140px;
+            }
+        }
+        &--generation {
+            input {
+                max-width: 137px;
+            }
+        }
+        &--hometown {
+            input {
+                max-width: 140px;
+            }
+        }
+        &--region {
+            input {
+                max-width: 107px;
+            }
+        }
+        label {
+            cursor: text;
+            font-size: 12px;
+            white-space: pre;
+            position: absolute;
+            text-transform: uppercase;
+            text-align: center;
+            font-family: 'Open Sans SemiBold';
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            transition: 0.3s;
+        }
+        input {
+            background: #E3E3E3;
+            padding: 7px 10px;
+            border: none;
+            border-radius: 4px;
+            border: 2px solid  #E3E3E3;
+            font-size: 12px;
+            line-height: 15px;
+            transition: 0.3s;
+            &:focus ~ label{
+                top: -6px;
+                left: 8px;
+                z-index: 4;
+                transform: none;
+                z-index: 9999;
+                display: inline-block;
+                background: #fff;
+                transition: 0.3s;
+                padding: 0 4px;
+                font-size: 10px;
+                color: #79c37b;
+            }
+            &:focus {
+                outline: none;
+                transition: 0.3s;
+                background: #fff;
+                border: 2px solid #4caf50;
+            }
+        }
+    }
+    .has-value {
+        input{
+           background: #fff;
+           border: 2px solid #4caf50;
+           &~label{
+               top: -6px;
+               left: 8px;
+               z-index: 4;
+               transform: none;
+               z-index: 9999;
+               display: inline-block;
+               background: #fff;
+               transition: 0.3s;
+               padding: 0 4px;
+               font-size: 10px;
+               color: #79c37b;
+           }
+       }
+   }
+}
