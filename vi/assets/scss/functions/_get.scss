@@ -1,7 +1,0 @@
-@function get($map, $key) {
-    @if map-has-key($map, $key) {
-        @return map-get($map, $key);
-    }
-    @warn "Unknown '#{$key}'";
-    @return null;
-}
